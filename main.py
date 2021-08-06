@@ -73,6 +73,7 @@ class Game:
         self.try_again_button = tk.Button(self.window_2, text="Try Again", command=self.go, width=12, bg='white')
         self.try_again_button.place(x=250, y=100)
 
+        self.wrong_label = tk.Label(self.window_2, text="Wrong spelling!", font="times 15")
         # Define the mainloop of the second window
         self.window_2.mainloop()
 
@@ -105,4 +106,5 @@ class Game:
             self.wrong_label.place(x=100, y=150)
 
 
-Game().run()
+if __name__ == "__main__":
+    Game()
